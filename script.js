@@ -219,8 +219,10 @@ function loadProjects() {
         projectGrid.innerHTML = '';
 
         videos.forEach(video => {
-            const videoPath = `${video.folder}/Video.mp4`;
-            const thumbnailPath = `${video.folder}/Thumbnail.png`;
+            // Bump "version" in videos.js after replacing a project's video or thumbnail
+            const mediaVersion = video.version ? `?v=${video.version}` : '';
+            const videoPath = `${video.folder}/Video.mp4${mediaVersion}`;
+            const thumbnailPath = `${video.folder}/Thumbnail.png${mediaVersion}`;
 
             const robloxBtn = video.link
                 ? `<a href="${video.link}" target="_blank" rel="noopener" class="roblox-link-btn" title="Play on Roblox" onclick="event.stopPropagation();">
