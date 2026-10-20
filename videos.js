@@ -25,5 +25,23 @@ const videos = [
     "genre": "Simulation",
     "subgenre": "Repetitive",
     "link": "https://www.roblox.com/games/112562796235582/Small-Fishing"
+  },
+  {
+    "id": "video4",
+    "folder": "assets/Video4",
+    "title": "+1 Boat Sailing",
+    "description": "Train your power, launch your boat and sail as far as you can! Earn Wins, unlock amazing boats and hatch powerful pets. How far can YOU sail?",
+    "genre": "Simulation",
+    "subgenre": "Incremental Simulator",
+    "link": "https://www.roblox.com/games/77216115172224/1-Boat-Sailing"
+  },
+  {
+    "id": "video5",
+    "folder": "assets/Video5",
+    "title": "Tank Dodging! 💥",
+    "description": "Bounce your shots off the walls and be the last tank standing!",
+    "genre": "Combat",
+    "subgenre": "Round-based",
+    "link": "https://www.roblox.com/games/121716533677184/Tank-Dodging"
   }
 ];
