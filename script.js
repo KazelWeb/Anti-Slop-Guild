@@ -219,10 +219,12 @@ function loadProjects() {
         projectGrid.innerHTML = '';
 
         videos.forEach(video => {
-            // Bump "version" in videos.js after replacing a project's video or thumbnail
+            // Bump "version" in videos.js after replacing a project's video
             const mediaVersion = video.version ? `?v=${video.version}` : '';
             const videoPath = `${video.folder}/Video.mp4${mediaVersion}`;
-            const thumbnailPath = `${video.folder}/Thumbnail.png${mediaVersion}`;
+            // The card preview shows the video's first frame
+            // (set "previewTime" in videos.js to skip a black intro)
+            const previewPath = `${videoPath}#t=${video.previewTime || 0.1}`;
 
             const robloxBtn = video.link
                 ? `<a href="${video.link}" target="_blank" rel="noopener" class="roblox-link-btn" title="Play on Roblox" onclick="event.stopPropagation();">
@@ -234,7 +236,7 @@ function loadProjects() {
             projectCard.className = 'project-card';
             projectCard.innerHTML = `
                 <div class="project-image">
-                    <img src="${thumbnailPath}" alt="${video.title} Thumbnail" style="width:100%; height:100%; object-fit:cover; display:block;">
+                    <video src="${previewPath}" preload="metadata" muted playsinline aria-label="${video.title} preview"></video>
                     <div class="overlay">
                         <a href="#" class="play-btn" onclick="playVideo('${videoPath}'); return false;">Play Game <i class="fas fa-play"></i></a>
                     </div>

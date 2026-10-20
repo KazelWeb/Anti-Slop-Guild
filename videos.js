@@ -33,6 +33,7 @@ const videos = [
     "description": "Train your power, launch your boat and sail as far as you can! Earn Wins, unlock amazing boats and hatch powerful pets. How far can YOU sail?",
     "genre": "Simulation",
     "subgenre": "Incremental Simulator",
+    "previewTime": 0.75,
     "link": "https://www.roblox.com/games/77216115172224/1-Boat-Sailing"
   },
   {
