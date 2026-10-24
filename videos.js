@@ -6,6 +6,7 @@ const videos = [
     "description": "Purify Kelches, Run from Angels, Escape!",
     "genre": "Survival",
     "subgenre": "Escape",
+    "previewTime": 0.75,
     "link": "https://www.roblox.com/games/110652378705612/Halo"
   },
   {
@@ -24,7 +25,8 @@ const videos = [
     "description": "Fish and Earn Offline!",
     "genre": "Simulation",
     "subgenre": "Repetitive",
-    "crop": { "top": 0, "bottom": 5.5 },
+    "previewTime": 1.25,
+    "crop": { "top": 0, "bottom": 11 },
     "link": "https://www.roblox.com/games/112562796235582/Small-Fishing"
   },
   {
@@ -34,7 +36,7 @@ const videos = [
     "description": "Train your power, launch your boat and sail as far as you can! Earn Wins, unlock amazing boats and hatch powerful pets. How far can YOU sail?",
     "genre": "Simulation",
     "subgenre": "Incremental Simulator",
-    "previewTime": 0.75,
+    "previewTime": 1,
     "crop": { "top": 9.5, "bottom": 9.5 },
     "link": "https://www.roblox.com/games/77216115172224/1-Boat-Sailing"
   },
@@ -45,6 +47,7 @@ const videos = [
     "description": "Bounce your shots off the walls and be the last tank standing!",
     "genre": "Combat",
     "subgenre": "Round-based",
+    "previewTime": 0.75,
     "crop": { "top": 11.5, "bottom": 2.5 },
     "link": "https://www.roblox.com/games/121716533677184/Tank-Dodging"
   },
