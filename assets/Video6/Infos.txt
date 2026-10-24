@@ -1,5 +1,5 @@
 ﻿Title: +1 Balloon Simulator
-Description: Inflate your balloon, float higher and higher, and unlock new worlds!
+Description: +1 balloon every second... how high can YOU float?
 Genre: Simulation
 Subgenre: Sandbox
 Link: https://www.roblox.com/games/116529813860519/1-Balloon-Simulator
