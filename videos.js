@@ -44,5 +44,14 @@ const videos = [
     "genre": "Combat",
     "subgenre": "Round-based",
     "link": "https://www.roblox.com/games/121716533677184/Tank-Dodging"
+  },
+  {
+    "id": "video6",
+    "folder": "assets/Video6",
+    "title": "+1 Balloon Simulator",
+    "description": "Inflate your balloon, float higher and higher, and unlock new worlds!",
+    "genre": "Simulation",
+    "subgenre": "Sandbox",
+    "link": "https://www.roblox.com/games/116529813860519/1-Balloon-Simulator"
   }
 ];
