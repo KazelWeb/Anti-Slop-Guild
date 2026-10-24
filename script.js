@@ -225,6 +225,14 @@ function loadProjects() {
             // The card preview shows the video's first frame
             // (set "previewTime" in videos.js to skip a black intro)
             const previewPath = `${videoPath}#t=${video.previewTime || 0.1}`;
+            // Zoom past black bars recorded into the video
+            // (set "crop": { "top": %, "bottom": % } in videos.js)
+            const cropTop = video.crop?.top || 0;
+            const cropBottom = video.crop?.bottom || 0;
+            const cropBars = cropTop + cropBottom;
+            const cropStyle = cropBars
+                ? `--crop-zoom: ${100 / (100 - cropBars)}; --crop-origin: center ${(cropTop / cropBars) * 100}%;`
+                : '';
 
             const robloxBtn = video.link
                 ? `<a href="${video.link}" target="_blank" rel="noopener" class="roblox-link-btn" title="Play on Roblox" onclick="event.stopPropagation();">
@@ -236,7 +244,7 @@ function loadProjects() {
             projectCard.className = 'project-card';
             projectCard.innerHTML = `
                 <div class="project-image">
-                    <video src="${previewPath}" preload="metadata" muted playsinline aria-label="${video.title} preview"></video>
+                    <video src="${previewPath}" style="${cropStyle}" preload="metadata" muted playsinline aria-label="${video.title} preview"></video>
                     <div class="overlay">
                         <a href="#" class="play-btn" onclick="playVideo('${videoPath}'); return false;">Play Game <i class="fas fa-play"></i></a>
                     </div>

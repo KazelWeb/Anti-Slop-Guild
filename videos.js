@@ -24,6 +24,7 @@ const videos = [
     "description": "Fish and Earn Offline!",
     "genre": "Simulation",
     "subgenre": "Repetitive",
+    "crop": { "top": 0, "bottom": 5.5 },
     "link": "https://www.roblox.com/games/112562796235582/Small-Fishing"
   },
   {
@@ -34,6 +35,7 @@ const videos = [
     "genre": "Simulation",
     "subgenre": "Incremental Simulator",
     "previewTime": 0.75,
+    "crop": { "top": 9.5, "bottom": 9.5 },
     "link": "https://www.roblox.com/games/77216115172224/1-Boat-Sailing"
   },
   {
@@ -43,6 +45,7 @@ const videos = [
     "description": "Bounce your shots off the walls and be the last tank standing!",
     "genre": "Combat",
     "subgenre": "Round-based",
+    "crop": { "top": 11.5, "bottom": 2.5 },
     "link": "https://www.roblox.com/games/121716533677184/Tank-Dodging"
   },
   {
@@ -52,6 +55,7 @@ const videos = [
     "description": "+1 balloon every second... how high can YOU float?",
     "genre": "Simulation",
     "subgenre": "Sandbox",
+    "crop": { "top": 5, "bottom": 4.5 },
     "link": "https://www.roblox.com/games/116529813860519/1-Balloon-Simulator"
   }
 ];
